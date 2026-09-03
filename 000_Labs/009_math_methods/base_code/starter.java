@@ -9,6 +9,12 @@ class starter {
 	public static void main(String args[]) {
 		// the string "I love to learn coding remotely." will appear in
 		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		Scanner sc = new Scanner(System.in);
+		double m = Math.max(7,8);
+		double t = Math.sqrt(81);
+		double y = Math.pow(5,13);
+		System.out.println(m);
+		System.out.println(t);
+		System.out.println(y);
 	}
 }
