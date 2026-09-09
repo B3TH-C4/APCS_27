@@ -8,8 +8,14 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// the string "I love to learn coding remotely." will appear in
-		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		int nine = (int) Math.random()*9;
+		int hund = (int) Math.random()*(1+100);
+		double point = Math.random()*(2.5+3.5);
+		double one = Math.random()*(14 +589);
+		
+		System.out.println(nine);
+		System.out.println(hund);
+		System.out.println(point);
+		System.out.println(one);
 	}
 }
