@@ -8,10 +8,10 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		int nine = (int) Math.random()*9;
-		int hund = (int) Math.random()*(1+100);
-		double point = Math.random()*(2.5+3.5);
-		double one = Math.random()*(14 +589);
+		int nine = (int) (Math.random()*9);
+		int hund = (int) ((Math.random()*100)+ 1);
+		double point = ((Math.random()*3.5) + 2.5);
+		double one = ((Math.random()*589)+14);
 		
 		System.out.println(nine);
 		System.out.println(hund);
