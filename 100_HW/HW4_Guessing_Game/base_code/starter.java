@@ -10,19 +10,19 @@ class starter {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Guess the Word!");
-		String pet = "dog ";
-		boolean yes = true;
+		String pet = "dog";
 		System.out.println("hint: a type of pet");
 		String answer1 = sc.nextLine();
+		boolean yes = ;
 		
-		if (answer1==pet){
+		if (yes){
 			System.out.println("That is correct!!!");
 		}
 		else { 
 			System.out.println("that unfortunately is incorrect :(");
 			System.out.println("heres a second hint: a man's best friend");
 			String answer2 = sc.nextLine();
-			if (answer2==pet){
+			if (==){
 				System.out.println("yayyyyy that's the answer!!!");
 			}
 			else {
