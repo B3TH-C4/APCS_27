@@ -7,8 +7,20 @@ import java.util.Scanner;
 
 class starter {
 	public static void main(String args[]) {
-		// the string "I love to learn coding remotely." will appear in
-		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("pick an integer from 1 - 20");
+		int one = sc.nextInt();
+		System.out.println("pick another integer from the same range");
+		int two = sc.nextInt();
+		boolean yes = one == two;
+		boolean no = one != two; 
+		if (yes){
+			System.out.println("yes they are equal");
+			
+		}
+
+		if (no) { 
+			System.out.println("no they are not equal");
+		}
 	}
 }
