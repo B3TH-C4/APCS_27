@@ -13,7 +13,72 @@ class starter {
 	static ArrayList<String> arr = new ArrayList<String>();
 
 	public static void main(String args[]) throws InterruptedException {
-		// Write your code here!
+		Scanner sc = new Scanner(System.in);
+		while (true){
+			System.out.println("how do you want to play the game? random, choose, or quit");
+			String play = sc.nextLine();
+			if (play.equals("random")){
+				System.out.println("randomly choosing a sentence...");
+				String random = getSentence();
+				System.out.println(random);
+
+				System.out.print("Letters in sentence:");
+				int lett = lettersInSentence(random);
+				System.out.println();
+
+				System.out.print("number of words");
+				int word = wordsInSentence(random);
+				System.out.println();
+
+				countdown(); 
+				startTimer();
+
+				String playin = sc.nextLine();
+				sc.nextLine();
+				
+				endTimer();
+				String timish = getTime();
+				System.out.println(timish);
+
+				
+				int compare = compareSentences(random, playin);
+
+			
+
+			}
+			else if(play.equals("choose")){
+				System.out.println("choose a number from 1- 100");
+				int num = sc.nextInt();
+				String choice = getSentence(num);
+				System.out.println(choice);
+
+				System.out.println("Letters in sentence:");
+				int let = lettersInSentence(choice);
+				System.out.println(let);
+
+				System.out.println("number of words");
+				int words = wordsInSentence(choice);
+				System.out.println(words);
+
+				countdown(); 
+				startTimer();
+
+				String playin1 = sc.nextLine();
+				sc.nextLine();
+
+				endTimer();
+				String time = getTime();
+				System.out.println(time);
+
+				int THis = compareSentences(choice, playin1);
+				System.out.println(THis);
+
+			}
+			else if (play.equals("quit")){
+				System.out.println("ok see you later");
+				break;
+			}
+		}
 
 		
 	}
