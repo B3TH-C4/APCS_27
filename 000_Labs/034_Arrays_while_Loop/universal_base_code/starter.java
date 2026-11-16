@@ -10,8 +10,18 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// Your code goes below here
-		BaseClass test = new BaseClass();
+		int count = 0;
+		int [] rand = new int[1000];
+		
+		while(true){
+			if(count == 999){
+				System.out.println(rand[count]);
+			}
+			rand[count] = (int) (Math.random()*(1000 - 1) + 1);
+			System.out.println(rand[count]);
+			count++;
+			
+		}
 
 
 		

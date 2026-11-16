@@ -10,9 +10,13 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// Your code goes below here
-		BaseClass test = new BaseClass();
+		int [] yay = new int[100];
+		System.out.println(getArrayMax(yay[count]));
+		System.out.println(getArrayMin(yay[count]));
+		System.out.println(getArrayAverage(yay[count]));
+		
 
+		
 
 		
 	}
